@@ -1,4 +1,4 @@
-const db = "mongodb+srv://dimitris:p4w3Q123@cluster0.xjong1l.mongodb.net/?retryWrites=true&w=majority";
+const db = "mongodb+srv://kkontolios:<4HynY9BkQWKSCWo8>@cluster0.zq0xeex.mongodb.net/?retryWrites=true&w=majority";
 const mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
