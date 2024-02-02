@@ -1,0 +1,333 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+body{
+    display: grid;
+    grid-template-rows: 40px 50px 800px 100px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main main"
+    "footer footer footer footer";
+    height: 100vh;
+}
+
+header, nav, aside, main, footer 
+{
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: lightgrey;
+
+}
+
+/* Header */
+
+header 
+{
+    grid-area: header;
+    background-color: rgba(207, 120, 38, 0.944);
+    height: 40px;
+}
+
+header .name
+{
+    display: block;
+    color: lightgray;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* navbar */
+nav 
+{
+    grid-area: nav;
+    background-color: rgba(207, 120, 38, 0.944);
+}
+
+nav a
+{
+    float: left;
+    color: lightgray;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover
+{   
+    color: rgb(7, 7, 7);
+}
+
+#manage
+{
+    display: none;
+}
+
+/* aside */
+
+aside 
+{
+    grid-area: aside;
+    background-color: rgba(207, 120, 38, 0.944);
+    
+}
+
+#side-btn
+{
+    display: none;
+}
+
+@media screen and (max-width: 600px) 
+{
+
+    nav a 
+    {
+        font-size: 12px;
+    }
+
+    #side-btn
+    {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.944);
+        color: white;
+    }
+
+    #sidebar
+    {
+        width: 40px;
+    }
+    #show_side
+    {
+        display: none;
+    }
+
+    main
+    {
+        width: 100%;
+    }
+
+}
+
+aside a 
+{
+    display: block;
+    color: lightgray;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#list-items {
+    display: none;
+    overflow: hidden;
+    padding : 5px;
+}
+
+aside i
+{
+    padding-left: 10px;
+}
+/*  */
+
+
+#bio
+{
+    display: none;
+}
+#bio span
+{
+    color: white;
+    padding-left: 35px;
+    margin-top: 500px;
+}
+#bio ul
+{
+    padding-top: 50px;
+}
+
+#photography
+{
+    display: none;
+}
+#photography span
+{
+    color: white;
+    padding-left: 35px;
+    margin-top: 500px;
+}
+#photography ul
+{
+    padding-top: 50px;
+}
+
+#works
+{
+    display: none;
+}
+#works span
+{
+    color: white;
+    padding-left: 35px;
+    margin-top: 500px;
+}
+#works ul
+{
+    padding-top: 50px;
+}
+
+#links
+{
+    display: none;
+}
+#links span
+{
+    color: white;
+    padding-left: 35px;
+    margin-top: 500px;
+}
+#links ul
+{
+    padding-top: 50px;
+}
+
+/* Main */
+
+main 
+{
+    grid-area: main;
+    background-color: white;
+
+}
+
+/* Footer */
+
+footer 
+{
+    grid-area: footer;
+    clear: both;
+    background-color: rgba(207, 120, 38, 0.944);
+    position: relative;
+    bottom: 0;
+
+}
+
+footer .name
+{
+    color: lightgray;
+    font-size:20px;
+}
+
+/* arrow */
+.arrow_down 
+{
+    border: solid rgb(243, 240, 240);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 7px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar 
+{
+    width: 7px;
+}
+  
+::-webkit-scrollbar-track 
+{
+    background: #141414;
+}
+  
+::-webkit-scrollbar-thumb 
+{
+    background: #f8f8f8;
+    border-radius: 50px;
+}
+  
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #000000;
+}
+
+/* login form */
+
+.login-form
+{
+    padding: 10px;
+}
+
+.login-txt
+{
+    color: rgb(240, 239, 239);
+
+}
+
+.cpanel .login
+{
+    color: white;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.email , .password
+{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+
+}
+
+.login-btn
+{
+    border-radius: 5px;
+    font-size: medium;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    margin-left: 40px;
+    
+}
+
+.clearfix{
+    float:left;
+    margin-right:5px;
+}
+
+.clearfix img{
+    height:500px;
+}
+
+.flex-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15pt;
+    padding: 10pt 0pt;
+    
+} 
+
+.flex-container img{
+    width:200pt;
+    border-radius: 15px;
+    box-shadow: 2pt 2pt 3pt 3pt rgba(0, 0, 0, 0.3);
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
