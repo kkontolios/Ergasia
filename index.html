@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <title>index</title>
+    </head>
+    <body>
+            <header>
+                <a href="index.html" class="name" id="Home">Home</a>
+            </header>
+
+            <nav>
+                <a href="#" onclick="togglediv('bio')">Biography</a> 
+                <a href="#"onclick="togglediv('photography')">Photography</a>
+                <a href="#" onclick="togglediv('works')">Albums</a>
+                <a href="#" onclick="togglediv('links')">Links</a>
+                <a href="#" onclick="togglediv('manage')">Manage</a>
+            </nav>
+            <aside id="sidebar">
+                <a onclick="sidebar()" id="side-btn">☰</a>
+                <div id="show_side">
+                    <div class="cpanel" id="bio">
+                        <a href="#" class="collapsible">Biography</a> 
+                        <ul>
+                            <li><a href="bio.html" id = "Container">bio</a></li>
+                        </ul>
+                    </div>   
+                    <div class="cpanel" id="photography">                    
+                        <a href="#" class="collapsible">Photos<i class="arrow_down"></i></a> 
+                        <div id="list-items">
+                            <ul>
+                                <li><a href="flexbox.html" id = "Container">Photos 1</a></li>
+                                <li><a href="flex2.html" id = "Container">Photos 2</a></li>
+                                <li><a href="flex3.html" id = "Container">Photos 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cpanel" id="works">
+                        <span>Albums</span>
+                        <ul>
+                            <li><a href="Ergo.html" id = "Container">Album 1</a></li>
+                            <li><a href="Ergo1.html" id = "Container">Album 2</a></li>
+                            <li><a href="Ergo2.html" id = "Container">Single</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cpanel" id="links">
+                        <span>Links</span>
+                        <ul>
+                            <li><a href="link1.html" id = "Container">Concerts</a></li>
+                            <li><a href="link2.html" id = "Container">Videos</a></li>
+                            <li><a href="link3.html" id = "Container">Online Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="cpanel" id="manage">
+                        <div class="login">Login</div>
+                        <form action="/" method="post">  
+                            <label class="login-txt">Email : </label>   
+                            <input type="email" placeholder="Enter Email" name="email" class="email" required>  
+                            <label class="login-txt">Password : </label>   
+                            <input type="password" placeholder="Enter Password" name="password" class="password" required>  
+                            <button type="submit" class="login-btn">Login</button>
+                        </form>
+                        <li><a href="/logout" >Logout</a></li>
+                        <li><a href="#">Manage Works</a></li>
+                        <li><a href="#">Manage Links</a></li>
+                    </div>
+                </div>
+                
+            </aside>
+
+            <main id = "content"></main>
+            <footer>
+                <div class="name">Footer</div>
+            </footer>
+      
+    </body>
+
+    <!--Javascript-->
+    <script src="/js/app.js"></script>
+    <script src="/js/click.js"></script>
+
+</html>
